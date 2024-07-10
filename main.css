@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.discordbutton, .b1, .b2{
+    transition: all 0.5s ease-in-out;
+}
+
+.discordbutton:hover, .b1:hover, .b2:hover{
+    background-color: rgb(232, 241, 248);
+    font-size: 0.9rem;
+}
+.body1-container p:nth-of-type(1), .c1{
+    font-family: "Anton SC", sans-serif;
+}
+.glowing{
+    animation: grow 3s ease-in-out infinite alternate ;
+}
+@keyframes grow {
+    to{
+        transform: scale(1.05);
+    }
+}
+
+.body4-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 3fr 1fr;
+}
+
+
+@media (max-width: 1499px){
+    .header-container, .body1-container, .body2-container, .body3-container, .body4-container{
+        width: 100%;
+    }
+    .header-container{
+        justify-content: space-between;
+    }
+    .menuicon{
+        visibility: visible;
+        position: relative;
+    }
+    .discordbutton, .navbar{
+        visibility: collapse;
+        position: absolute;
+    }
+    .sideIMG1, .sideIMG2, .cloud{
+        visibility: collapse;
+        position: absolute;
+    }
+    .body1{
+        background-image: url("images/Image0.svg");
+        background-position: 100% 100%;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    .c1{
+        font-size: 4em;
+    }
+    .c2{
+        font-size: 0.7em;
+    }
+    .body2-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .body2-item1, .body2-item2{
+        width: 70%;
+    }
+    .body2-item2{
+        text-align: center;
+        padding: 0;
+        align-items: center;
+    }
+    .body2-item1{
+        align-items: center;
+    }
+    .changeorder1{
+        align-items: center;
+        order: 1;
+    }
+    .changeorder2{
+        order: 2;
+    }
+    .removemargin{
+        margin-right: 0;
+    }
+    .body4-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 2fr 1fr;
+    }
+    .b4-i1, .b4-s2{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3em;
+    }
+    .b4-i2, .b4-i3, .b4-i4, .b4-i5{
+        padding: 5em;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .b4-s2{
+        margin-top: 0;
+        gap: 30px;
+    }
+
+}

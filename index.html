@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & Tailwind CSS Starter Pack</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <div class="wrapper relative w-screen flex flex-col flex-wrap">
+
+        <div class="header w-screen relative left-[50%] translate-x-[-50%] flex flex-row flex-wrap justify-center bg-[#404fec]">
+            <div class="header-container w-[1500px] flex flex-row flex-wrap px-2 justify-around py-4">
+                <img src="images/logo.svg" class="glowing">
+                <div class="navbar flex flex-row flex-wrap gap-x-4 text-white justify-center items-center">
+                    <a href="" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Download</a>
+                    <a href="" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Nitro</a>
+                    <a href="" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Discover</a>
+                    <a href="" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Safety</a>
+                    <a href="" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Support</a>
+                    <a href="" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Blog</a>
+                    <a href="" onmouseover="this.style.textDecoration='underline'" onmouseout="this.style.textDecoration='none'">Careers</a>
+                </div>
+                <button class="discordbutton bg-white rounded-3xl w-[130px] text-sm cursor-pointer">Open Discord</button>
+                <img src="images/menu.png" class="menuicon absolute top-0 right-0 collapse h-[30px] w-[30px]">
+            </div>
+        </div>
+
+        <div class="body1 w-screen relative left-[50%] translate-x-[-50%] flex flex-row flex-wrap justify-center bg-[#404fec]">
+            <div class="body1-container relative w-[1500px] flex flex-col flex-wrap text-center items-center py-32">
+                <p class="c1 text-white text-center text-[7em] z-10 pl-[3.5rem]">IMAGINE A PLACE...</p>
+                <p class="c2 text-white text-center text-[1.2em] w-[80%] pb-[20px] z-10">...where you can belong to a school club, a gaming group, or a worldwide art community. <br/>Where just you and a handful of friends can spend time together. A place that makes it easy <br/> to talk every day and hang out more often.</p>
+                <div class="button-boxes flex flex-row flex-wrap items-center gap-x-5 z-10">
+                    <button class="b1 bg-white flex flex-row flex-wrap items-center rounded-3xl h-[40px] w-[270px] justify-center">
+                        <img src="images/downlaod.jpg" class="h-[30px] w-[30px] rounded-3xl">
+                        <p>Download for Windows</p>
+                    </button>
+                    <button class="b2 bg-black text-white rounded-3xl h-[40px] w-[270px]" >Open Discord in your browser</button>
+                </div>
+            </div>
+            <img src="images/Image2.svg" class=" sideIMG1 absolute bottom-0 left-[10%] z-[2]">
+            <img src="images/Image1.svg" class=" sideIMG2 absolute bottom-0 right-[10%] z-[2]">
+            <img src="images/Image0.svg" class="glowing cloud absolute bottom-0 z-0">
+        </div>
+
+        <div class="body2 w-screen relative left-[50%] translate-x-[-50%] flex flex-row flex-wrap justify-center bg-[#fefffe]">
+            <div class="body2-container w-[1500px] flex flex-row flex-wrap justify-center py-24">
+                <div class="body2-item1 w-[50%] flex flex-col flex-wrap justify-center items-end">
+                    <img src="images/section1Image.svg" class="glowing w-[80%] h-[80%]">
+                </div>
+                <div class="body2-item2 w-[50%] flex flex-col flex-wrap gap-y-4 p-20 pt-16">
+                    <p class="text-5xl font-bold w-[60%]">Create an invite-only place where you belong</p>
+                    <p class="text-xl w-[50%]">Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="body2 w-screen relative left-[50%] translate-x-[-50%] flex flex-row flex-wrap justify-center bg-[#f6f7f7]">
+            <div class="body2-container w-[1500px] flex flex-row flex-wrap justify-center py-24">
+                <div class="body2-item1 w-[50%] flex flex-col flex-wrap justify-center items-start order-2 changeorder1">
+                    <img src="images/section2Image.svg" class="glowing w-[80%] h-[80%]">
+                </div>
+                <div class="body2-item2 w-[50%] flex flex-col flex-wrap gap-y-4 p-20 pt-16 items-end order-1 changeorder2">
+                    <p class="text-5xl font-bold w-[60%]">Where hanging out is easy</p>
+                    <p class="text-xl w-[50%] mr-14 removemargin">Grab a seat in a voice channel when you're free. Friends in your server can see you're around and instantly pop in to talk without having to call.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="body2 w-screen relative left-[50%] translate-x-[-50%] flex flex-row flex-wrap justify-center bg-[#fefffe]">
+            <div class="body2-container w-[1500px] flex flex-row flex-wrap justify-center py-24">
+                <div class="body2-item1 w-[50%] flex flex-col flex-wrap justify-center items-end">
+                    <img src="images/section3Image.svg" class="glowing w-[80%] h-[80%]">
+                </div>
+                <div class="body2-item2 w-[50%] flex flex-col flex-wrap gap-y-4 p-20 pt-16">
+                    <p class="text-5xl font-bold w-[60%]">From few to a fandom</p>
+                    <p class="text-xl w-[50%]">Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="body3 w-screen relative left-[50%] translate-x-[-50%] flex flex-row flex-wrap justify-center bg-[#f6f7f7]">
+            <div class="body3-container w-[1500px] flex flex-col flex-wrap items-center py-14">
+                <p class="c1 text-black text-center text-[4em]">RELIABLE TECH FOR STAYING CLOSE</p>
+                <p class=" text-black text-center text-[1em]">Low-latency voice and video feels like you're in the same room. Wave hello over video, watch friends stream <br/> their games, or gather up and have a drawing session with screen share.</p>
+                <img src="images/section4Image.svg" class="glowing">
+                <div class="flex relative flex-row flex-wrap justify-center items-center mb-2">
+                    <p class="c1 text-black text-center text-[2em] z-10">Ready to start your journey?</p>
+                    <img src="images/section5Image.svg" class="absolute top-[-50%] left-[-5%] z-0">
+                </div>
+                <button class="b1 bg-[#404fec] flex flex-row flex-wrap items-center rounded-3xl h-[40px] w-[270px] justify-center gap-x-2">
+                    <img src="images/downlaod-transformed.webp" class="h-[30px] w-[30px] rounded-3xl">
+                    <p class="text-white">Download for Windows</p>
+                </button>
+            </div>
+        </div>
+
+        <div class="body4 w-screen relative left-[50%] translate-x-[-50%] flex flex-row flex-wrap justify-center bg-[#22262a]">
+            <div class="body4-container relative w-[1500px] py-14">
+                <div class="b4-i1 flex flex-col flex-wrap gap-y-3">
+                    <p class="text-[#5764f1] c1 text-5xl">IMAGINE A <br/>PLACE</p>
+                    <div class="b4-i1-s1 flex flex-row flex-wrap gap-x-4">
+                        <img src="images/twitter.JPG" class="cursor-pointer">
+                        <img src="images/instagram.JPG" class="cursor-pointer">
+                        <img src="images/facebook.JPG" class="cursor-pointer">
+                        <img src="images/youtube.JPG" class="cursor-pointer">
+                    </div>
+                </div>
+                <div class="b4-i2 flex flex-col flex-wrap gap-y-3">
+                    <p class="text-[#5764f1] mb-2">Product</p>
+                    <a class="text-white" href="">Download</a>
+                    <a class="text-white" href="">Nitro</a>
+                    <a class="text-white" href="">Status</a>
+                </div>
+                <div class="b4-i3 flex flex-col flex-wrap gap-y-3">
+                    <p class="text-[#5764f1] mb-2">Company</p>
+                    <a class="text-white" href="">About</a>
+                    <a class="text-white" href="">Jobs</a>
+                    <a class="text-white" href="">Branding</a>
+                    <a class="text-white" href="">Newsroom</a>
+                </div>
+                <div class="b4-i4 flex flex-col flex-wrap gap-y-3">
+                    <p class="text-[#5764f1] mb-2">Resources</p>
+                    <a class="text-white" href="">Colleges</a>
+                    <a class="text-white" href="">Support</a>
+                    <a class="text-white" href="">Safety</a>
+                    <a class="text-white" href="">Blog</a>
+                    <a class="text-white" href="">Feedback</a>
+                    <a class="text-white" href="">Developers</a>
+                    <a class="text-white" href="">StreamKit</a>
+                    <a class="text-white" href="">Creators</a>
+                </div>
+                <div class="b4-i5 flex flex-col flex-wrap gap-y-3">
+                    <p class="text-[#5764f1] mb-2">Policies</p>
+                    <a class="text-white" href="">Terms</a>
+                    <a class="text-white" href="">Privacy</a>
+                    <a class="text-white" href="">Cookie Settings</a>
+                    <a class="text-white" href="">Guidelines</a>
+                    <a class="text-white" href="">Acknowledgements</a>
+                    <a class="text-white" href="">Licenses</a>
+                    <a class="text-white" href="">Moderation</a>
+                </div>
+
+                <div class="b4-s2 col-span-5 pt-10 border-t-4 border-[#535ee8] mt-10 flex flex-row flex-wrap justify-between">
+                    <img src="images/logo.svg" alt="">
+                    <button class="text-white bg-[#535ee8] w-[100px] rounded-[3em]">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</body>
+</html>
